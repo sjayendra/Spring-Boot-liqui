@@ -28,6 +28,7 @@ public class AdminController {
     public ResponseEntity<?> updateUser(@RequestBody User user) {
         User existUser = userService.findByUsername(user.getUsername());
         if (existUser != null && !existUser.getId().equals(user.getId())) {
+
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         return new ResponseEntity<>(userService.updateUser(user), HttpStatus.CREATED);

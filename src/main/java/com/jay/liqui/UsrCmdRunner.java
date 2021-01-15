@@ -49,9 +49,7 @@ public class UsrCmdRunner implements CommandLineRunner {
             usr01.setPassword(passwordEncoder.encode("titan123"));
             //  String password = "titan123";
             usr01.setEmail("sjayendra@gmail.com");
-            //userService.saveUser(usr01);
-
-
+           // userService.saveUser(usr01);
 
     }
 }

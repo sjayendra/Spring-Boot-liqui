@@ -43,7 +43,6 @@ public class UserController {
         return new ResponseEntity<>(userService.saveUser(user), HttpStatus.CREATED);
     }
 
-    //@GetMapping("/login")
 
 
     @GetMapping("/api/user/login")
@@ -60,6 +59,7 @@ public class UserController {
 
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
+
 
     @PostMapping("/api/user/purchase")
     public ResponseEntity<?> purchaseProduct(@RequestBody Transaction transaction){

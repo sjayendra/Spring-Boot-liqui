@@ -8,7 +8,7 @@ public interface UserService {
 
     User updateUser(User user);
 
-    void deleteUser(Long userId);
+    void deleteUser(String userId);
 
     User findByUsername(String username);
 
